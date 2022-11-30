@@ -1,4 +1,71 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+.experience-background {
+  background: #232435;
+  height: auto;
+  padding-bottom: 100px;
+  position: relative;
+}
+
+.experience-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.experience-top .experience-top-content .experience-cards {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+.experience-top .experience-top-content .experience-cards .exp-card {
+  width: 267px;
+  height: 284px;
+  box-shadow: 2px 10px 50px 0px rgba(158, 158, 158, 0.25);
+  background-color: #181b2d;
+  margin-top: -70px;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  position: relative;
+  z-index: 999;
+  transition: all 0.4s ease-in-out;
+}
+.experience-top .experience-top-content .experience-cards .exp-card:hover {
+  transform: translateY(-30px);
+  background: #007bff;
+  color: #fff;
+}
+.experience-top .experience-top-content .experience-cards .exp-card span {
+  font-size: 60px;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.experience-top .experience-top-content .experience-cards .exp-card h2 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #fff;
+  margin-top: 20px;
+}
+.experience-top .experience-top-content .experience-cards .exp-card p {
+  color: rgba(255, 255, 255, 0.703);
+  font-size: 16px;
+  font-weight: 600;
+}
+.experience-top .experience-top-content .experience-cards .exp-card i {
+  font-size: 60px;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 20px;
+}
+@media (min-with: 50em) {
+  .experience-top .experience-cards {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 .navbar-sect {
   height: 80px;
   position: relative;
@@ -193,9 +260,6 @@
   position: relative;
   z-index: 1;
 }
-.carousel .carousel-inner .carousel-item .carousel-caption .box-caption .btn-b span:hover {
-  color: #00b2ff;
-}
 .carousel .carousel-inner .carousel-item .carousel-caption .box-caption .btn-b::after {
   content: "";
   left: 0;
@@ -257,14 +321,15 @@
   height: 40px;
   width: 60px;
   background: #00b2ff;
+  border-radius: 3px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .settings span {
   color: #fff;
-  -webkit-animation: spin 1s ease-in-out infinite;
-          animation: spin 1s ease-in-out infinite;
+  -webkit-animation: spin 0.6s linear infinite;
+          animation: spin 0.6s linear infinite;
 }
 @-webkit-keyframes spin {
   to {
@@ -277,6 +342,13 @@
   }
 }
 
+@media (min-with: 50em) {
+  .experience-cards {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 * {
   margin: 0;
   padding: 0;
